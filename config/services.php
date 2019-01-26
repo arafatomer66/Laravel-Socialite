@@ -30,6 +30,12 @@ return [
         'secret' => env('SPARKPOST_SECRET'),
     ],
 
+    'facebook' => [
+        'client_id' => '538616473299973',
+        'client_secret' => '6d84fc9392e243247f64c539dfbb121a',
+        'redirect' => 'http://localhost:8000/login/facebook/callback',
+    ],
+
     'stripe' => [
         'model' => App\User::class,
         'key' => env('STRIPE_KEY'),
